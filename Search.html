@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate">
+    <title>Login All Pt</title>
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/Swiper/2.7.6/idangerous.swiper.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/Swiper/2.7.6/idangerous.swiper.min.css">
+    <style>
+        body,h1,h2,h3,hr,p,dl,dt,dd,ul,ol,li,button,input,textarea,th,td{margin:0;padding:0}body,button,input,select,textarea{font:12px/1 Tahoma,Helvetica,Arial,"\5fae\8f6f\96c5\9ed1",sans-serif}h1{font-size:18px}h2{font-size:16px}h3{font-size:14px}address,em,i{font-style:normal}code,kbd,pre,samp{font-family:"Courier New",Courier,monospace}b,strong{font-weight:normal}ul,ol{list-style:none}a{text-decoration:none;color:inherit}button,input,select,textarea{font-size:100%}input:focus{outline:none}table{border-collapse:collapse;border-spacing:0}hr{border:none;height:1px}.clearfix::before,.clearfix::after{content:".";display:block;height:0;visibility:hidden}.clearfix::after{clear:both}.clearfix{zoom:1}.pr{position:relative}.pa{position:absolute}.fl{float:left}.fr{float:right}
+        .swiper-container{
+            width:95%;
+            margin-left: 0;
+        }
+        .swiper-wrapper,.swiper-slide,iframe{
+            width: 100%;
+        }
+        .right-fixed{
+            position: fixed;
+            right: 0;
+            bottom: 30px;
+            z-index: 9999;
+        }
+        .menu{
+            float: right;
+        }
+        .search{
+            margin-bottom: 10px;
+            padding-right: 9px;
+            background: white;
+        }
+        .search i{
+            display: inline-block;
+            border: 1px solid #bbb;
+            padding: 2px 3px;
+        }
+        .search input{
+            border: 0 none;
+            width: 51px;
+            transition: all .3s;
+        }
+        .se-anim input{
+            width: 194px;
+            font-size: 16px;
+        }
+        .search button{
+            display: none;
+        }
+        .menu span{
+            display: block;
+            float: left;
+            background: #000;
+            text-align: left;
+            color: #fff;
+            font-size: 14px;
+            padding: 2px 5px 2px;
+            margin: 1px 0;
+            transition: all .3s;
+            cursor: pointer;
+            clear: both;
+        }
+        .menu span:hover,.menu .swiper-active-switch{
+            background: #AE4141;
+            transform: scale(1.1) translateX(-10px);
+        }
+    </style>
+</head>
+<body>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <iframe data-src='https://hdchina.org/torrents.php' data-name='HDChina' frameborder='0'></iframe>
+            </div>
+            <div class="swiper-slide">
+                <iframe data-src='https://totheglory.im/browse.php?c=M' data-name='TTGlory' frameborder='0'></iframe>
+            </div>
+            <div class="swiper-slide">
+                <iframe data-src='https://tp.m-team.cc/torrents.php' data-name='M-Team' frameborder='0'></iframe>
+            </div>
+            <div class="swiper-slide">
+                <iframe data-src='https://chdbits.co/torrents.php' data-name='CHDBits' frameborder='0'></iframe>
+            </div>            
+            <div class="swiper-slide">
+                <iframe data-src='https://hdsky.me/torrents.php' data-name='HDSky' frameborder='0'></iframe>
+            </div>
+            <div class="swiper-slide">
+                <iframe data-src='https://hdcmct.org/torrents.php' data-name='CMCT' frameborder='0'></iframe>
+            </div>
+            <div class="swiper-slide">
+                <iframe data-src='https://nanyangpt.com/torrents.php' data-name='NYPT' frameborder='0'></iframe>
+            </div>
+            <div class="swiper-slide">
+                <iframe data-src='https://pt.sjtu.edu.cn/torrents.php' data-name='Putao' frameborder='0'></iframe>
+            </div>
+            <div class="swiper-slide">
+                <iframe data-src='https://npupt.com/torrents.php' data-name='Npuer' frameborder='0'></iframe>
+            </div>
+            <div class="swiper-slide">
+                <iframe data-src='https://hyperay.org/torrents.php' data-name='Hyperay' frameborder='0'></iframe>
+            </div>
+            <div class="swiper-slide">
+                <iframe data-src='https://ourbits.club/torrents.php' data-name='OurBits' frameborder='0'></iframe>
+            </div>
+            <div class="swiper-slide">
+                <iframe data-src='https://pt.upxin.net/torrents.php' data-name='HDUpxin' frameborder='0'></iframe>
+            </div>
+            <div class="swiper-slide">
+                <iframe data-src='https://hdhome.org/torrents.php' data-name='HDHome' frameborder='0'></iframe>
+            </div>
+            <div class="swiper-slide">
+                <iframe data-src='http://hdtime.org/torrents.php' data-name='HDTime' frameborder='0'></iframe>
+            </div>
+            <div class="swiper-slide">
+                <iframe data-src='http://pt.eastgame.org/torrents.php' data-name='TLFBits' frameborder='0'></iframe>
+            </div>
+            <div class="swiper-slide">
+                <iframe data-src='http://et8.org/torrents.php' data-name='TCCF' frameborder='0'></iframe>
+            </div>
+            <div class="swiper-slide">
+                <iframe data-src='https://pt.hit.edu.cn/torrents.php' data-name='QYPT' frameborder='0'></iframe>
+            </div>            
+        </div>
+    </div>
+    <div class="right-fixed">
+        <div id="search" class="search">
+            <i><input id='seinput' placeholder="一键搜索" type="text"></i>
+        </div>
+        <div id="menu" class='menu clearfix'></div>
+    </div>
+    <script>
+        //resize width height
+        function resizeWH(){
+            var windowH = $(window).height();
+            $(".swiper-container,.swiper-slide,iframe").height(windowH);
+        };
+        resizeWH();
+        $(window).resize(function(){
+            resizeWH();
+        });
+        //生成右侧pt名为nav
+        $("iframe").each(function(){
+            var ptname = $(this).attr('data-name'),
+                url    = $(this).attr('data-src'),
+                date   = new Date();
+            $('#menu').append('<span class="swiper-pagination-switch">' + ptname + '</span>');
+            $(this).attr('src', url + '?nocache=' + date.getTime());//每次刷新url加字符串防止页面缓存
+            $(this).attr('name', 'nocache' + date.getTime());//每次刷新更改iframe名防止页面缓存
+        });
+        var mySwiper = new Swiper('.swiper-container', {
+            loop : true,
+            mode : 'vertical',
+            pagination : '#menu',
+            paginationClickable :true,
+            createPagination :false,
+        });
+        //搜索
+        $('#seinput').focus(function(){
+            $('#search').addClass('se-anim');
+            $(this).attr('placeholder','请输入关键词，再按回车键');
+            $(this).select();
+        }).blur(function(){
+            $('#search').removeClass('se-anim');
+            $(this).attr('placeholder','一键搜索');
+        });
+        $('#seinput').keyup(function(e){
+            if(e.keyCode==13){//回车键
+                var keywords = $(this).val();
+                $("iframe").each(function(){
+                    var ifdataname = $(this).attr('data-name'),
+                        url        = $(this).attr('data-src');
+                    if(ifdataname=='M-Team'||ifdataname=='CHDBits'||ifdataname=='HDSky'||ifdataname=='HDHome'||ifdataname=='TLFBits'||ifdataname=='OurBits'||ifdataname=='TCCF'||ifdataname=='HDTime'||ifdataname=='HDUpxin'){
+                        $(this).attr('src', url + '?incldead=1&spstate=0&inclbookmarked=0&search_area=0&search_mode=0&search=' + keywords)
+                    }else if(ifdataname=='TTGlory'){
+                        $(this).attr('src', url + '&search_field=' + keywords)
+                    }else if(ifdataname=='HDChina'){
+                        $(this).attr('src', url + '?incldead=1&spstate=0&inclbookmarked=0&boardid=0&seeders=&search_area=0&search_mode=0&search=' + keywords)
+                    }else if(ifdataname=='CMCT'||ifdataname=='Hyperay'){
+                        $(this).attr('src', url + '?incldead=1&spstate=0&pick=0&inclbookmarked=0&search_area=0&search_mode=0&search=' + keywords)
+                    }else if(ifdataname=='NYPT'){
+                        $(this).attr('src', url + '?incldead=0&inclkeepseed=0&spstate=0&inclbookmarked=0&search_area=0&search_mode=0&search=' + keywords)
+                    }else if(ifdataname=='Putao'){
+                        $(this).attr('src', url + '?incldead=0&spstate=0&inclbookmarked=0&picktype=0&search_area=0&search_mode=0&search=' + keywords)
+                    }else if(ifdataname=='QYPT'){
+                        $(this).attr('src', url + '?incldead=0&spstate=0&inclbookmarked=0&search_area=0&search_mode=0&time_area=0&search=' + keywords)
+                    }else if(ifdataname=='Npuer'){
+                        $(this).attr('src', url + '?incldead=1&nodupe=1&sort=10&search=' + keywords)
+                    }
+                });
+                $('#search').removeClass('se-anim');
+                $(this).attr('placeholder','一键搜索');
+                $(this).blur();
+            }
+        });
+    </script>
+</body>
+</html>
